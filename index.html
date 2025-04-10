@@ -189,5 +189,39 @@
         <p>&copy; 2025 Umkhaya Lodge: Manyoni | All rights reserved.</p>
     </footer>
 </body>
+    ...
+<section id="booking">
+    <h2>Book Your Stay</h2>
+    <p>
+        Please use the contact form above to send your booking request. We
+        will get back to you with availability and confirmation.
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Umkhaya Lodge: Manyoni | All rights reserved.</p>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const gallerySection = document.getElementById('gallery');
+    const imagePaths = [
+      '20220320_180525.jpg',
+      '20221104_170433 (1).jpg',
+      '20221104_170433.jpg',
+      '379577492.jpg',
+      'IMG-20221015-WA00005.jpg', // Assuming .jpg extension, adjust if different
+      'IMG-20221015-WA0020.jpg'  // Assuming .jpg extension, adjust if different
+      // Add more image filenames here if needed
+    ];
+
+    imagePaths.forEach(path => {
+      const img = document.createElement('img');
+      img.src = path;
+      img.alt = 'Gallery Image'; // Add a more specific alt description if possible
+      gallerySection.appendChild(img);
+    });
+  });
+</script>
 
 </html>
