@@ -15,22 +15,39 @@
         }
 
         header {
-            /* Use the attached image as the background */
-            background: url('UmkhayaLogo.png') center/contain no-repeat; /* Replace 'your_image_filename.png' with the actual filename and ensure it's in the correct path */
-            height: auto; /* Adjust height as needed to fit the logo nicely */
-            padding: 20px 0; /* Add some padding top and bottom */
-            color: white;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
         }
 
-        header h1,
-        header p,
-        header .book-button {
-            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for better readability */
+        .logo-container {
+            /* Container for the logo image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            padding: 10px 0; /* Adjust padding as needed */
+        }
+
+        .logo-container img {
+            /* Style the logo image itself */
+            max-width: 200px; /* Adjust max-width as needed */
+            height: auto;
+        }
+
+        .banner {
+            /* Style the banner area */
+            background: url('your_banner_image.jpg') center/cover no-repeat; /* Replace with your banner image */
+            height: 300px; /* Adjust height as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .banner h1,
+        .banner p,
+        .banner .book-button {
+            background-color: rgba(255, 255, 255, 0.8);
             color: #4e3c2a;
             padding: 10px 20px;
             border-radius: 5px;
@@ -95,9 +112,14 @@
 
 <body>
     <header>
-        <h1>Umkhaya Lodge: Manyoni</h1>
-        <p>Luxury Safari Bed & Breakfast on a Big Five Game Farm</p>
-        <a href="#booking" class="book-button">Book Now</a>
+        <div class="logo-container">
+            <img src="UmkhayaLogo.png" alt="Umkhaya Lodge Logo">
+        </div>
+        <div class="banner">
+            <h1>Umkhaya Lodge: Manyoni</h1>
+            <p>Luxury Safari Bed & Breakfast on a Big Five Game Farm</p>
+            <a href="#booking" class="book-button">Book Now</a>
+        </div>
     </header>
 
     <nav>
