@@ -19,29 +19,27 @@
         }
 
         .logo-container {
-            /* Container for the logo image */
             display: flex;
             justify-content: center;
             align-items: center;
             height: auto;
-            padding: 10px 0; /* Adjust padding as needed */
+            padding: 10px 0;
         }
 
         .logo-container img {
-            /* Style the logo image itself */
-            max-width: 200px; /* Adjust max-width as needed */
+            max-width: 200px;
             height: auto;
         }
 
         .banner {
-            /* Style the banner area */
-            background: url('your_banner_image.jpg') center/cover no-repeat; /* Replace with your banner image */
-            height: 300px; /* Adjust height as needed */
+            background: url('UmkhayaLogo.png') center/contain no-repeat;
+            height: auto;
+            padding: 20px 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: #4e3c2a;
         }
 
         .banner h1,
@@ -75,10 +73,16 @@
             color: #4e3c2a;
         }
 
-        .gallery img {
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery-container img {
             width: 100%;
             max-width: 300px;
-            margin: 10px;
             border-radius: 8px;
         }
 
@@ -123,11 +127,11 @@
     </header>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#accommodation">Accommodation</a>
-        <a href="#activities">Game Drives</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a href="about.html">About</a>
+        <a href="accommodation.html">Accommodation</a>
+        <a href="activities.html">Game Drives</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <section id="about">
@@ -137,6 +141,7 @@
             offers an unforgettable experience in the African bush. Enjoy comfort,
             nature, and the thrill of the Big Five all in one place.
         </p>
+        <p><a href="about.html" class="book-button">Learn More About Us</a></p>
     </section>
 
     <section id="accommodation">
@@ -145,6 +150,7 @@
             Rustic yet luxurious rooms with stunning views, en-suite bathrooms,
             and private verandas. Relax in style after a day of adventure.
         </p>
+         <p><a href="accommodation.html" class="book-button">View Our Rooms</a></p>
     </section>
 
     <section id="activities">
@@ -154,13 +160,20 @@
             lions, elephants, rhinos, leopards, and buffalo in their natural
             habitat.
         </p>
+        <p><a href="activities.html" class="book-button">Explore Our Activities</a></p>
     </section>
 
     <section id="gallery" class="gallery">
         <h2>Gallery</h2>
-        <img src="https://via.placeholder.com/300x200?text=Lodge" alt="Lodge View">
-        <img src="https://via.placeholder.com/300x200?text=Game+Drive" alt="Game Drive">
-        <img src="https://via.placeholder.com/300x200?text=Wildlife" alt="Wildlife">
+        <div class="gallery-container">
+            <img src="20220320_180525.jpg" alt="Gallery Image">
+            <img src="20221104_170433 (1).jpg" alt="Gallery Image">
+            <img src="20221104_170433.jpg" alt="Gallery Image">
+            <img src="379577492.jpg" alt="Gallery Image">
+            <img src="IMG-20221015-WA00005.jpg" alt="Gallery Image">
+            <img src="IMG-20221015-WA0020.jpg" alt="Gallery Image">
+        </div>
+        <p><a href="gallery.html" class="book-button">View Full Gallery</a></p>
     </section>
 
     <section id="contact">
@@ -175,6 +188,7 @@
             <button type="submit">Send Booking Request</button>
         </form>
         <p>Or <a href="https://wa.me/27826562863">WhatsApp us</a> directly.</p>
+        <p><a href="contact.html" class="book-button">Get In Touch</a></p>
     </section>
 
     <section id="booking">
@@ -189,39 +203,5 @@
         <p>&copy; 2025 Umkhaya Lodge: Manyoni | All rights reserved.</p>
     </footer>
 </body>
-    ...
-<section id="booking">
-    <h2>Book Your Stay</h2>
-    <p>
-        Please use the contact form above to send your booking request. We
-        will get back to you with availability and confirmation.
-    </p>
-</section>
-
-<footer>
-    <p>&copy; 2025 Umkhaya Lodge: Manyoni | All rights reserved.</p>
-</footer>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const gallerySection = document.getElementById('gallery');
-    const imagePaths = [
-      '20220320_180525.jpg',
-      '20221104_170433 (1).jpg',
-      '20221104_170433.jpg',
-      '379577492.jpg',
-      'IMG-20221015-WA00005.jpg', // Assuming .jpg extension, adjust if different
-      'IMG-20221015-WA0020.jpg'  // Assuming .jpg extension, adjust if different
-      // Add more image filenames here if needed
-    ];
-
-    imagePaths.forEach(path => {
-      const img = document.createElement('img');
-      img.src = path;
-      img.alt = 'Gallery Image'; // Add a more specific alt description if possible
-      gallerySection.appendChild(img);
-    });
-  });
-</script>
 
 </html>
