@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<img src="20220320_180525.jpg" alt="Website banner">
 
-<img src="379577492.jpg" alt="Your Logo">
-
-<img src="20221104_170433(1).jpg" alt="Website Banner">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,14 +15,26 @@
         }
 
         header {
-            background: url('https://via.placeholder.com/1400x500?text=Safari+Sunset') center/cover no-repeat;
-            height: 500px;
+            /* Use the attached image as the background */
+            background: url('UmkhayaLogo.png') center/contain no-repeat; /* Replace 'your_image_filename.png' with the actual filename and ensure it's in the correct path */
+            height: auto; /* Adjust height as needed to fit the logo nicely */
+            padding: 20px 0; /* Add some padding top and bottom */
             color: white;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+        }
+
+        header h1,
+        header p,
+        header .book-button {
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for better readability */
+            color: #4e3c2a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
 
         nav {
